@@ -3,7 +3,7 @@ This repo is an original implementation of the paper [Knowledge Corpus Error in 
 by [Yejoon Lee](https://github.com/yejoon-lee), [Philhoon Oh](https://philhoonoh.github.io/), and [James Thorne](https://jamesthorne.com/).
 
 ## Abstract
-![Diagram](img/diagram.png)
+<img src="img/diagram.png" width="50%">
 
 Recent works in open-domain question answering (QA) have explored **generating context passages from large language models (LLMs)**, replacing the traditional retrieval step in the QA pipeline. 
 However, it is not well understood why generated passages can be more effective than retrieved ones. 
