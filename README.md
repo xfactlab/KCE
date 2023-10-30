@@ -21,8 +21,8 @@ Our results across three QA benchmarks reveal an increased performance (10% - 13
 We use four additional python packages: `PyYAML`, `tenacity`, `openai==0.27.10`, and `anthropic==0.2.10`. You can install these in your Python environment.
 
 Or simply install the requirements using the following command:
-```shell
-$ pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 ### Important note on OpenAI / Anthropic
@@ -53,7 +53,7 @@ There are three steps in our pipeline: `paraphrase`, `read`, and `eval`. Each co
 
 ### Paraphrase
 Usage:
-```shell
+```
 $ python paraphrase.py --help
 usage: paraphrase.py [-h] --dataset DATASET [--buffer_size BUFFER_SIZE] [--data_path DATA_PATH] [--result_path RESULT_PATH]
 
@@ -71,13 +71,13 @@ options:
 
 ```
 Example:
-```shell
+```
 $ python paraphrase.py --dataset nq
 ```
 
 ### Read
 Usage:
-```shell
+```
 $ python read.py --help
 usage: read.py [-h] --dataset DATASET --paraph_path PARAPH_PATH [--buffer_size BUFFER_SIZE] [--data_path DATA_PATH] [--result_path RESULT_PATH]
 
@@ -97,13 +97,13 @@ options:
 
 ```
 Example:
-```shell
+```
 $ python read.py --dataset nq --paraph_path MY_PARAPHRASED_NQ.jsonl
 ```
 
 ### Eval
 Usage:
-```shell
+```
 $ python eval.py --help
 usage: eval.py [-h] --dataset DATASET --result_path RESULT_PATH
 
@@ -116,6 +116,6 @@ options:
                         path to the results which are the output of read.py
 ```
 Example:
-```shell
+```
 $ python eval.py --dataset nq --read_path MY_READ_NQ.jsonl
 ```
