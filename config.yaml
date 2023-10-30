@@ -1,0 +1,9 @@
+dataset_path:
+  nq:
+  hotpotqa: PATH_TO_DIR/hotpot_dev_distractor_v1.json
+  strategyqa: PATH_TO_DIR/strategyqa_train.json
+  qasc: PATH_TO_DIR/dev.jsonl
+strategyqa_paragraph_path: PATH_TO_DIR/strategyqa_train_paragraphs.json
+
+openai_key_path: PATH_TO_KEY
+anthropic_key_path: PATH_TO_KEY
