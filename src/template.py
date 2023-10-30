@@ -3,12 +3,13 @@ from abc import abstractmethod, ABC
 
 class Template(ABC):
     def __init__(self, dataset: str):
+        # dataset: one of ['nq', 'strategyqa', 'qasc', 'hotpotqa']
         self.dataset = dataset
 
     @abstractmethod
     def format(self, q: str, c: str) -> str:
         """
-        Format the given question and context into a prompt.
+        Format the given question and context into a prompt, according to the dataset.
         Args:
             q: question
             c: context

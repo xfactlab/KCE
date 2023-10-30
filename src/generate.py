@@ -21,7 +21,7 @@ class BaseComplete(ABC):
 
 
 class OpenaiComplete(BaseComplete):
-    # Assumes OpenAI Python SDK as of June 2023. It may have changed since then.
+    # This code is ran with openai==0.27.10. The API may have changed since then.
     def __init__(self, api_key_path: str):
         with open(api_key_path, "r") as f:
             openai.api_key = f.read()
@@ -33,7 +33,7 @@ class OpenaiComplete(BaseComplete):
 
 
 class AnthropicComplete(BaseComplete):
-    # Assumes Anthropic Python SDK as of June 2023. It may have changed since then.
+    # This code is ran with anthropic==0.2.10. The API may have changed since then.
     def __init__(self, api_key_path: str):
         with open(api_key_path, "r") as f:
             self.api_key = f.read()
